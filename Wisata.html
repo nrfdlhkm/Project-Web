@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wisata List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head> 
+<body>
+  <div class="hero">
+    <video autoplay muted id="myVideo">
+      <source src="3.mp4" type="video/mp4">
+    </video>
+    <header>
+      <a href="#" class="logo">Tou<span>rs.</span></a>
+      <ul class="navbar">
+          <li><a href="halaman.html" id="home">Home</a></li>
+          <li><a href="about.html" id="about">About</a></li>
+          <li><a href="Wisata.html" id="wisata">Wisata</a></li>
+          <li><a href="login.html" id="login">Login</a></li>
+      </ul>
+  </header>
+  </div>
+   
+
+    <div class="content">
+      <h3>Search</h3>
+      <h1>your Holiday!</h1>
+      <!-- <p>I am a front-end web developer. I can provide clean code and pixel perfect design. <br> I also make the website more & more interactive.</p>
+      <a href="#" class="btn">Subscribe</a> -->
+    </div>
+
+      <div class="search-container">
+        <!-- <select id="flight">
+            <option value="" disabled selected></option>
+            <option value="flight1">Lion Air</option>
+            <option value="flight2">Garuda Air</option>
+            <option value="flight3">Batik Air</option>
+            <option value="flight4">Citilink</option>
+            <option value="flight5">Air Asia</option>
+            <option value="flight6">Sriwijaya Air</option>
+        </select> -->
+        <select id="hotel">
+            <option value="" disabled selected>Pilih Provinsi</option>
+            <option value="provinsi">Sulawesi Selatan</option>
+            <option value="provinsi">Sulawesi Barat</option>
+            <option value="provinsi">Sulawesi Tenggara</option>
+        </select>
+        <select id="destination">
+            <option value="" disabled selected>Pilih Kota</option>
+            <option value="Kota">Parepare</option>
+            <option value="Kota">Makassar</option>
+            <option value="Kota">Bulukumba</option>
+            <option value="Kota">Polewali</option>
+            <option value="Kota">Mamuju</option>
+            <option value="Kota">Toraja</option>
+            <option value="Kota">Pinrang</option>
+        </select>
+        <!-- <input type="date" id="date" placeholder="Pilih Tanggal"> -->
+        <div class="search-button">
+        <button onclick="search()">search</button>
+      </div>
+    </div>
+
+    <!-- <div class="background">
+    <div class="container">
+      <div class="card__container">
+         <article class="card__article">
+          <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+            <img src="landscape-1.png" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Vancouver Mountains, Canada</span>
+               <h2 class="card__title">The Great Path</h2>
+               <a href="#" class="card__button">Read More</a>
+            </div>
+         </article>
+
+         <article class="card__article">
+            <img src="landscape-2.png" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Poon Hill, Nepal</span>
+               <h2 class="card__title">Starry Night</h2>
+               <a href="#" class="card__button">Read More</a>
+            </div>
+         </article>
+
+         <article class="card__article">
+            <img src="landscape-3.png" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Bojcin Forest, Serbia</span>
+               <h2 class="card__title">Path Of Peace</h2>
+               <a href="#" class="card__button">Read More</a>
+            </div>
+            <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
+         </article>
+      </div>
+   </div>
+  </div>
+   -->
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll(".navbar a");
+  
+      // Tambahkan event listener untuk setiap link navbar
+      links.forEach(link => {
+          link.addEventListener("click", function (event) {
+              // Menghapus kelas 'active' dari semua link navbar
+              links.forEach(link => {
+                  link.classList.remove("active");
+              });
+  
+              // Menambahkan kelas 'active' ke link yang diklik
+              this.classList.add("active");
+          });
+      });
+  
+      // Tambahkan kelas 'active' ke link sesuai dengan halaman yang sedang dibuka
+      const currentLocation = window.location.href;
+      links.forEach(link => {
+          if (link.href === currentLocation) {
+              link.classList.add("active");
+          }
+      });
+  });
+      </script>
+
+<script>
+  // Function to play the video
+  function playVideo() {
+      var video = document.getElementById("hero-video");
+      video.play();
+  }
+
+  // Call the function after the page loads
+  window.onload = playVideo;
+</script>
+
+<script>
+  function search() {
+      // Navigate to parepare.html
+      window.location.href = "Pare.html";
+  }
+</script>
+<!-- <script src="assets/js/scrollreveal.min.js"></script>
+<script>
+  const sr = ScrollReveal({
+    origin: 'top',
+    distance:'60px',
+    duration: 3000,
+    delay: 400,
+  });
+
+  sr.reveal(`.hero, .logo`,{delay: 600, distance: '100px', interval: 100});
+</script> -->
+<!-- <script>
+  Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Something went wrong!",
+  footer: '<a href="#">Why do I have this issue?</a>'
+});
+</script> -->
+</html>
+
+
+
+

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wisata Nusantara</title>
+
+  <!---------------------------- CSS Link ---------------------->
+  <link rel="stylesheet" type="text/css" href="halaman style.css">
+  
+  <!---------------------------- Boxicons Link ------------------------------>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!---------------------------- Remixicon Link ------------------------------>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+  <!---------------------------- Google Fonts Link ------------------------------>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <!---------------------------- Font Awesome Icons Link ------------------------------>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+  <!------------------------------ Owl Carousel Links ------------------------------>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+  <!------------------------------ Custom CSS ------------------------------>
+  <style>
+    .page-transition {
+      animation: fadeOut 0.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+    body, h1, h2, h3, h4, h5, h6, p, a, span {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!------------------------------ HEADER ------------------------------>
+  <header>
+    <a href="#" class="logo">Tou<span>rs.</span></a>
+    <ul class="navbar">
+      <li><a href="#">Home</a></li>
+      <li><a href="#holiday">About</a></li>
+      <li><a href="Wisata.html">Wisata</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </header>
+
+  <!--------------------------- HOME SECTION ------------------------------>
+  <section class="home">
+    <div class="home-text">
+      <h1>Destinasi <br> Wisata Nusantara</h1>
+      <p>Indonesia, negara Asia Tenggara yang terdiri dari ribuan gunung berapi<br> Pulau-pulau, adalah rumah bagi ratusan kelompok etnis yang berbicara</p>
+    </div>
+  </section>
+
+  <!--------------------------- ABOUT SECTION ------------------------------>
+  <section id="holiday" class="holiday">
+    <div class="holiday-img">
+      <img src="h1.png">
+    </div>
+    <div class="holiday-text">
+      <h5>Let's</h5>
+      <h2>Learn more about tours</h2>
+      <p>Menikmati keindahan alam dan kekayaan budaya dunia merupakan pengalaman yang tak terlupakan. Setiap perjalanan wisata adalah kesempatan untuk menemukan keajaiban baru, menjelajahi tempat-tempat ikonik, dan merasakan keunikan setiap destinasi. </p>
+    </div>
+  </section>
+
+  <!-- <div class="container">
+    <div class="slider-wrapper">
+      <div class="center-text">
+      <h2>Gallery</h2>
+      </div>
+      <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+      <ul class="image-list">
+        <img class="image-item" src="image slide/image 1.jpg" alt="img-1" />
+        <img class="image-item" src="image slide/image 2.jpg" alt="img-2" />
+        <img class="image-item" src="image slide/image 3.jpg" alt="img-3" />
+        <img class="image-item" src="image slide/image 4.jpg" alt="img-4" />
+        <img class="image-item" src="image slide/image 5.jpg" alt="img-5" />
+        <img class="image-item" src="image slide/image 6.jpg" alt="img-6" />
+        <img class="image-item" src="image slide/image 7.jpg" alt="img-7" />
+        <img class="image-item" src="image slide/image 8.jpg" alt="img-8" />
+        <img class="image-item" src="image slide/image 9.jpg" alt="img-9" />
+        <img class="image-item" src="image slide/image 10.jpg" alt="img-10" />
+      </ul>
+      <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
+    </div>
+    <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+        <div class="scrollbar-thumb"></div>
+      </div>
+    </div>
+  </div> -->
+
+  <!--------------------------- TOUR SECTION ------------------------------>
+  <section class="tour">
+    <div class="center-text">
+      <h2>Wisata Populer</h2>
+    </div>
+    <div class="tour-content">
+      <div class="box">
+        <img src="Bromo.jpg">
+        <h6>East Java</h6>
+        <h4>Gunung Bromo</h4>
+      </div>
+      <div class="box">
+        <img src="Raja Ampat.jpg">
+        <h6>West Papua</h6>
+        <h4>Raja Ampat</h4>
+      </div>
+      <div class="box">
+        <img src="Labuan Bajo.jpg">
+        <h6>East Nusa Tenggara</h6>
+        <h4>Labuan Bajo</h4>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------- REVIEW SECTION ------------------------------>
+  <section id="Testimonial" class="Testi">
+    <div class="testimonials-section">
+      <div class="center-text">
+        <div class="header-review-teks">
+          <h2>Testimonial</h2>
+        </div>
+      </div>
+      
+          <!------------------ Testimonial Starts ------------------>
+          <div class="owl-carousel owl-theme testimonials-container">
+            <!--------- Item 1 Starts -------->
+            <div class="item testimonial-card">
+              <main class="test-card-body">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <h2>Keren!</h2>
+                </div>
+                <p>"Situs web wisata ini luar biasa! Dengan mudah saya temukan destinasi favorit di Indonesia. Fitur langsung lokasinya sangat membantu. Terima kasih!"</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </main>
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="image1.jpg">
+                </div>
+                <div class="profile-desc">
+                  <span>Adam</span>
+                  <span>adams3@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <!---------- Item 1 Ends --------->
+      
+            <!--------- Item 2 Starts -------->
+            <div class="item testimonial-card">
+              <main class="test-card-body">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <h2>Kurang bagus</h2>
+                </div>
+                <p>"Tidak puas dengan layanan website ini. Lokasi wisata yang ditampilkan tidak akurat dan informasi yang disajikan kurang lengkap. Perlu banyak perbaikan."</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </main>
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="image2.jpg">
+                </div>
+                <div class="profile-desc">
+                  <span>Anita</span>
+                  <span>Anitaa90@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <!--------- Item 2 Ends ----------->
+      
+            <!-------- Item 3 Starts ---------->
+            <div class="item testimonial-card">
+              <main class="test-card-body">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <h2>Good good</h2>
+                </div>
+                <p>"Saya sangat senang menemukan website ini! Dengan beberapa klik, saya bisa temukan destinasi wisata di Indonesia yang saya inginkan. Sangat praktis dan informatif!"</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </main>
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="image3.jpg">
+                </div>
+                <div class="profile-desc">
+                  <span>Bambang</span>
+                  <span>Bambanguhuy@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <!-------- Item 3 Ends ----------->
+      
+            <!------- Item 4 Starts ---------->
+            <div class="item testimonial-card">
+              <main class="test-card-body">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <h2>Nice</h2>
+                </div>
+                <p>"Wow! Saya terkesan dengan kemudahan dalam menemukan destinasi wisata di Indonesia melalui website ini. Sangat direkomendasikan!"</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </main>
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="image4.jpg">
+                </div>
+                <div class="profile-desc">
+                  <span>Anisa</span>
+                  <span>Anisay@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <!---------- Item 4 Ends ---------->
+      
+            <!---------- Item5 Starts -------->
+            <div class="item testimonial-card">
+              <main class="test-card-body">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <h2>Thanks Tours</h2>
+                </div>
+                <p>"Terima kasih atas website ini! Saya bisa dengan cepat menemukan destinasi wisata di Indonesia dan merencanakan liburan impian saya. Sangat direkomendasikan!"</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </main>
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="image5.jpg">
+                </div>
+                <div class="profile-desc">
+                  <span>Jessica</span>
+                  <span>Jessik@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <!---------- Item 5 Ends -------->
+      
+            <!--------- Item 6 Starts -------->
+            <div class="item testimonial-card">
+              <main class="test-card-body">
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <h2>Tidak rekomen</h2>
+                </div>
+                <p>"Informasi yang disajikan tidak akurat dan tidak terstruktur dengan baik. Saya merasa sangat kecewa dengan pengalaman menggunakan website ini. Tidak direkomendasikan."</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </main>
+              <div class="profile">
+                <div class="profile-image">
+                  <img src="image6.jpg">
+                </div>
+                <div class="profile-desc">
+                  <span>Dani</span>
+                  <span>Daniii@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <!---------- Item6 Ends ---------->
+
+          </div>
+          <!-------- Testimonial Ends -------->
+        </div>
+      </section>
+      
+  <!----------------------------- CULTURE SECTION ----------------------------->
+  <section class="Culture">
+    <div class="Culture-text">
+      <h5>INDONESIA CULTURE</h5>
+      <h2>Our culture here is very friendly to people</h2>
+      <p>Dikenal karena keramahan, kesopanan, dan sikap ramahnya, budaya Indonesia membanggakan tradisi yang mewarisi nilai-nilai tersebut dari generasi ke generasi.</p>
+      <a href="https://en.wikipedia.org/wiki/Culture_of_Indonesia" class="btn">Read more</a>
+    </div>
+    <div class="Culture-img">
+      <img src="culture.jpg">
+    </div>
+  </section>
+
+  <!----------------------------- FOOTER SECTION ----------------------------->
+  <section class="Footer">
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Email Marketing</a>
+      <a href="">Campaigns</a>
+      <a href="#">Brandings</a>
+      <a href="#">Offline</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Our story</a>
+      <a href="">Benefits</a>
+      <a href="#">Team</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">Help</a>
+      <a href="">FAQ</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Social</h3>
+      <div class="Social">
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-Github-fill"></i></a>
+        <a href="#"><i class="ri-Snpachat-fill"></i></a>
+        <a href="#"><i class="ri-WhatsApp-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------- COPYRIGHT SECTION ----------------------------->
+  <div class="copyright">
+    <p>Copyright 2024 By Tours</p>
+  </div>
+
+  <!------------------------------- JAVASCRIPT --------------------------------->
+
+  <!------------------------------- JQuery Link ----------------------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!---------------------------- Testimonial js Link ------------------------------------>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-------------------- Js untuk Carousel Testimoni dengan Owl Carousel ---------------->
+  <script>
+    const header = document.querySelector("header");
+window.addEventListener("scroll", function() {
+header.classList.toggle("sticky", window.scrollY > 60)
+});
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('.testimonials-container').owlCarousel({
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:6000,
+        margin:10,
+        nav:true,
+        navText:["<i class='fa-solid fa-arrow-left'></i>",
+                "<i class='fa-solid fa-arrow-right'></i>"],
+        responsive:{
+          0:{
+            items:1,
+            nav:false
+          },
+          600:{
+            items:1,
+            nav:true
+          },
+          768:{
+            items:2
+          },
+        }
+      });
+    });
+  </script>
+
+  <!---- Js Pergantian Halaman dengan Animasi saat Mengklik Gambar ---->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const boxBromo = document.querySelector(".box:nth-child(1)"); 
+      const boxRajaAmpat = document.querySelector(".box:nth-child(2)");
+
+      //              Bromo              //
+      // Event listener untuk gambar Bromo
+      boxBromo.addEventListener("click", function() {
+        // Menambahkan kelas animasi saat berpindah halaman
+        document.body.classList.add('page-transition');
+
+        // Mengarahkan pengguna ke halaman Bromo.html setelah animasi selesai
+        setTimeout(function() {
+          window.location.href = "Bromo.html";
+        }, 900); // durasi animasi fadeOut
+      });
+
+      //              RAJA AMPAT              //
+      // Event listener untuk gambar Raja Ampat
+      boxRajaAmpat.addEventListener("click", function() {
+        // Menambahkan kelas animasi saat berpindah halaman
+        document.body.classList.add('page-transition');
+
+        // Mengarahkan pengguna ke halaman Raja Ampat.html setelah animasi selesai
+        setTimeout(function() {
+          window.location.href = "Raja Ampat.html";
+        }, 500); // durasi animasi fadeOut
+      });
+    });
+  </script>
+
+  <!-------------- Link JS Swiper ---------------->
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+  <!-------------- Animasi Halaman ---------------->
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance:'60px',
+      duration: 3000,
+      delay: 400,
+    });
+
+    sr.reveal(`.home, .navbar, .logo, .Footer`,{delay: 600, distance: '100px', interval: 100});
+    sr.reveal(`.holiday-img`, {origin: 'left'});
+    sr.reveal(`.holiday-text`, {origin: 'right'});
+    sr.reveal(`.Culture-text`, {origin: 'left'});
+    sr.reveal(`.Culture-img`, {origin: 'right'});
+    sr.reveal(`.Testi`, {origin: 'left'});
+    sr.reveal(`.Testi`, {origin: 'right'});
+    sr.reveal(`.tour`, {interval: 200});
+  </script>
+
+  <!------ Js untuk Menampilkan Daftar Pilihan 'Wisata' saat Hover ---->
+  <script>
+    const dropdown = document.querySelector('.dropdown');
+
+    dropdown.addEventListener('mouseover', function() {
+      const dropdownContent = this.querySelector('.dropdown-content');
+      dropdownContent.style.display = 'block';
+    });
+
+    dropdown.addEventListener('mouseout', function() {
+      const dropdownContent = this.querySelector('.dropdown-content');
+      dropdownContent.style.display = 'none';
+    });
+  </script>
+
+  </body>
+  </html>
